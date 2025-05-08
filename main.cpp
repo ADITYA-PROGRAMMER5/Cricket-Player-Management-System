@@ -4,7 +4,12 @@ using namespace std;
 const int Max_player = 11;
 
 class Player {
-    
+    public:
+    int jerseyNumber;
+    string Name;
+    int runs;
+    int wickets;
+    int matchPlayed;
 };
 
 int main () {
