@@ -47,7 +47,15 @@ class playerManagement {
         count = 0;
     }
 
-    
+    void addPlayer () {
+        if (count >= Max_player)
+        {
+            cout<<"Cannot add more player, max limit reached.";
+        }
+        players[count].enterData();
+        count++;
+        cout<<"Player Added Successfully"<<endl;
+    }
 };
 
 int main () {
