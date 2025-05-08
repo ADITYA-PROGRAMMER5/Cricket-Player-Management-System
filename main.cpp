@@ -32,7 +32,9 @@ class Player {
         cout<<"Total Match Played: "<<matchPlayed;
     }
 
-    
+    int getScore() {
+        return runs + wickets * 20;
+    }
 };
 
 int main () {
