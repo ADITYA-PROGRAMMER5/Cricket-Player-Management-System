@@ -1,5 +1,7 @@
 #include <iostream>
-using namespace std; 
+using namespace std;
+
+const int Max_player = 11;
 
 int main () {
     
