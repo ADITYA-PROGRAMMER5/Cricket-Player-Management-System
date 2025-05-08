@@ -41,6 +41,8 @@ class playerManagement {
     private:
     Player players[Max_player];
     int count;
+
+    public:
 };
 
 int main () {
