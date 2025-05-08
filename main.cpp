@@ -38,6 +38,9 @@ class Player {
 };
 
 int main () {
+    int choice;
+
+   
     
 return 0;
 }
