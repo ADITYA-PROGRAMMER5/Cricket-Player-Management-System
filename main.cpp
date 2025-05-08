@@ -52,6 +52,41 @@ int main () {
         cout << "7. Exit\n";
         cout<<"Enter your choice: ";
         cin>>choice;
+
+        switch (choice)
+        {
+        case 1:
+            
+            break;
+
+        case 2:
+            
+            break;
+
+        case 3:
+            
+            break;
+        
+        case 4:
+            
+            break;
+
+        case 5:
+
+            break;
+
+        case 6:
+
+            break;
+
+        case 7:
+            cout<<"Exiting.....\n";
+            cout<<"Thank you for using Player Management System";
+            break;
+
+        default:
+            cout<<"Invalid Choice, Try Again";
+        }
     } while (choice != 7);
     
     
