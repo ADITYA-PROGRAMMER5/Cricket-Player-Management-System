@@ -24,6 +24,14 @@ class Player {
         cin>>matchPlayed;
     }
 
+    void getData() {
+        cout<<"Jersey: "<<jerseyNumber;
+        cout<<"Name: "<<Name;
+        cout<<"Runs: "<<runs;
+        cout<<"Wicket: "<<wickets;
+        cout<<"Total Match Played: "<<matchPlayed;
+    }
+
     
 };
 
