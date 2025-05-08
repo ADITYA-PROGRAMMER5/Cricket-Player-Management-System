@@ -25,16 +25,20 @@ class Player {
     }
 
     void getData() {
-        cout<<"Jersey: "<<jerseyNumber;
-        cout<<"Name: "<<Name;
-        cout<<"Runs: "<<runs;
-        cout<<"Wicket: "<<wickets;
-        cout<<"Total Match Played: "<<matchPlayed;
+        cout<<"\nJersey: "<<jerseyNumber;
+        cout<<"\nName: "<<Name;
+        cout<<"\nRuns: "<<runs;
+        cout<<"\nWicket: "<<wickets;
+        cout<<"\nTotal Match Played: "<<matchPlayed;
     }
 
     int getScore() {
         return runs + wickets * 20;
     }
+};
+
+class playerManagement {
+    
 };
 
 int main () {
