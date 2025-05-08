@@ -59,6 +59,7 @@ class playerManagement {
 };
 
 int main () {
+    playerManagement management;
     int choice;
 
     do
@@ -77,7 +78,7 @@ int main () {
         switch (choice)
         {
         case 1:
-            
+            management.addPlayer();
             break;
 
         case 2:
