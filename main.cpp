@@ -43,6 +43,11 @@ class playerManagement {
     int count;
 
     public:
+    playerManagement() {
+        count = 0;
+    }
+
+    
 };
 
 int main () {
