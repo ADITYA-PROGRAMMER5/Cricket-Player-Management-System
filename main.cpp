@@ -40,7 +40,20 @@ class Player {
 int main () {
     int choice;
 
-   
+    do
+    {
+        cout << "\n--- Player Management System ---\n";
+        cout << "1. Add Player\n";
+        cout << "2. Remove Player\n";
+        cout << "3. Search Player\n";
+        cout << "4. Update Player\n";
+        cout << "5. Display All Players\n";
+        cout << "6. Display Top 3 Players\n";
+        cout << "7. Exit\n";
+        cout<<"Enter your choice: ";
+        cin>>choice;
+    } while (choice != 7);
+    
     
 return 0;
 }
