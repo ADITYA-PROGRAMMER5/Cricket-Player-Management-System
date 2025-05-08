@@ -56,6 +56,27 @@ class playerManagement {
         count++;
         cout<<"Player Added Successfully"<<endl;
     }
+
+    void removePlayer () {
+        int jersey;
+        cout<<"Enter Player Jersey Number: ";
+        cin>>jersey;
+        
+        for (int i = 0; i < count; ++i)
+        {
+            if (players[i].jerseyNumber == jersey)
+            {
+                for (int j = 0; i < count - 1; ++j)
+                {
+                    players[j] = players[j + 1];
+                }
+                count--;
+                cout<<"Player Removed Successfully\n"<<endl;
+                return;
+            }
+        }
+        cout<<"Player Not Founded, Try Again\n"<<endl;
+    }
 };
 
 int main () {
