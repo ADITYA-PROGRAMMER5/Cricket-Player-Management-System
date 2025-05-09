@@ -83,7 +83,7 @@ class playerManagement {
         cout<<"Enter Player Jersey Number: ";
         cin>>jersey;
 
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < count; ++i)
         {
             if (players[i].jerseyNumber == jersey)
             {
@@ -94,6 +94,29 @@ class playerManagement {
             }
         }
         cout<<"Player Not Founded, Try Again\n"<<endl;
+    }
+
+    void updatePlayer() {
+        int jersey;
+        cout<<"Enter Player Jersey Number: ";
+        cin>>jersey;
+
+        for (int i = 0; i < count; ++i)
+        {
+            if (players[i].jerseyNumber == jersey)
+            {
+                cout<<"\nPlayed Found Successfully"<<endl;
+                cout<<"Enter Player New Runs: "<<endl;
+                cin>>players[i].runs;
+                cout<<"Enter Player New Wickets: "<<endl;
+                cin>>players[i].wickets;
+                cout<<"Enter Player New Match: "<<endl;
+                cin>>players[i].matchPlayed;
+                cout<<"\nPlayed New Data Updated Successfully"<<endl;
+            } else {
+                cout<<"Player Not Founded, Try Again\n"<<endl;
+            }  
+        }
     }
 };
 
