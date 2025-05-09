@@ -54,7 +54,7 @@ class playerManagement {
         }
         players[count].enterData();
         count++;
-        cout<<"Player Added Successfully"<<endl;
+        cout<<"\nPlayer Added Successfully"<<endl;
     }
 
     void removePlayer () {
@@ -72,6 +72,24 @@ class playerManagement {
                 }
                 count--;
                 cout<<"Player Removed Successfully\n"<<endl;
+                return;
+            }
+        }
+        cout<<"Player Not Founded, Try Again\n"<<endl;
+    }
+
+    void searchPlayer() {
+        int jersey;
+        cout<<"Enter Player Jersey Number: ";
+        cin>>jersey;
+
+        for (int i = 0; i < count; i++)
+        {
+            if (players[i].jerseyNumber == jersey)
+            {
+                cout<<"\nPlayer Found Successfully"<<endl;
+                players[i].getData();
+                cout<<"\n";
                 return;
             }
         }
