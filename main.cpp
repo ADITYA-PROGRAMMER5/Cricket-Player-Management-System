@@ -165,7 +165,7 @@ int main () {
             break;
         
         case 4:
-            management.updatePlayer();
+            management.updatePlayer(); 
             break;
 
         case 5:
