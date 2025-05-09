@@ -149,16 +149,19 @@ public:
         }
     }
 
-    void displayTop3() {
-        if (count == 0) {
-            cout<<"No Player, Available"<<endl;
+    void displayTop3()
+    {
+        if (count == 0)
+        {
+            cout << "No Player, Available" << endl;
         }
 
         for (int i = 0; i < count - 1; ++i)
         {
             for (int j = 0; j < count; ++j)
             {
-                if (players[j].getScore() > players[i].getScore()) {
+                if (players[j].getScore() > players[i].getScore())
+                {
                     Player temp = players[i];
                     players[i] = players[j];
                     players[j] = temp;
@@ -166,11 +169,11 @@ public:
             }
         }
 
-        cout<<"\nTop 3 Player"<<endl;
+        cout << "\nTop 3 Player" << endl;
         for (int i = 0; i < count && i < 3; ++i)
         {
             players[i].getData();
-            cout<<"\n";
+            cout << "\n";
         }
     }
 };
