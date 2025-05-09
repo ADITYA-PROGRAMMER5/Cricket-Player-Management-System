@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-const int Max_player = 11;
+const int Max_player = 17;
 
 class Player {
     public:
@@ -103,7 +103,7 @@ int main () {
             break;
 
         case 2:
-            
+            management.removePlayer();
             break;
 
         case 3:
