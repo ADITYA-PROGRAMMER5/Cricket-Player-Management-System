@@ -170,6 +170,7 @@ public:
         for (int i = 0; i < count && i < 3; ++i)
         {
             players[i].getData();
+            cout<<"\n";
         }
     }
 };
@@ -215,7 +216,7 @@ int main()
             break;
 
         case 6:
-
+            management.displayTop3();
             break;
 
         case 7:
