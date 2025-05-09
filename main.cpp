@@ -148,6 +148,12 @@ public:
             cout << "\n\n----------------------" << endl;
         }
     }
+
+    void displayTop3() {
+        if (count == 0) {
+            cout<<"No Player, Available"<<endl;
+        }
+    }
 };
 
 int main()
