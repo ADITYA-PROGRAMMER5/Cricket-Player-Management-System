@@ -169,7 +169,7 @@ public:
         cout<<"\nTop 3 Player"<<endl;
         for (int i = 0; i < count && i < 3; ++i)
         {
-            
+            players[i].getData();
         }
     }
 };
