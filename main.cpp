@@ -169,7 +169,7 @@ int main () {
             break;
 
         case 5:
-
+            management.displayAllPlayer();
             break;
 
         case 6:
