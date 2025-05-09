@@ -125,7 +125,7 @@ int main () {
             break;
 
         case 3:
-            
+            management.searchPlayer();
             break;
         
         case 4:
@@ -149,7 +149,6 @@ int main () {
             cout<<"Invalid Choice, Try Again";
         }
     } while (choice != 7);
-    
     
 return 0;
 }
