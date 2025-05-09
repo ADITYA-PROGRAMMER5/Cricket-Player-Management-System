@@ -3,65 +3,73 @@ using namespace std;
 
 const int Max_player = 17;
 
-class Player {
-    public:
+class Player
+{
+public:
     int jerseyNumber;
     string Name;
     int runs;
     int wickets;
     int matchPlayed;
 
-    void enterData() {
-        cout<<"Enter Player Jersey Number: ";
-        cin>>jerseyNumber;
-        cout<<"Enter Player Name: ";
-        cin>>Name;
-        cout<<"Enter Player Runs: ";
-        cin>>runs;
-        cout<<"Enter Player Wicket taken: ";
-        cin>>wickets;
-        cout<<"Enter Player Match Played: ";
-        cin>>matchPlayed;
+    void enterData()
+    {
+        cout << "Enter Player Jersey Number: ";
+        cin >> jerseyNumber;
+        cout << "Enter Player Name: ";
+        cin >> Name;
+        cout << "Enter Player Runs: ";
+        cin >> runs;
+        cout << "Enter Player Wicket taken: ";
+        cin >> wickets;
+        cout << "Enter Player Match Played: ";
+        cin >> matchPlayed;
     }
 
-    void getData() {
-        cout<<"\nJersey: "<<jerseyNumber;
-        cout<<"\nName: "<<Name;
-        cout<<"\nRuns: "<<runs;
-        cout<<"\nWicket: "<<wickets;
-        cout<<"\nTotal Match Played: "<<matchPlayed;
+    void getData()
+    {
+        cout << "\nJersey: " << jerseyNumber;
+        cout << "\nName: " << Name;
+        cout << "\nRuns: " << runs;
+        cout << "\nWicket: " << wickets;
+        cout << "\nTotal Match Played: " << matchPlayed;
     }
 
-    int getScore() {
+    int getScore()
+    {
         return runs + wickets * 20;
     }
 };
 
-class playerManagement {
-    private:
+class playerManagement
+{
+private:
     Player players[Max_player];
     int count;
 
-    public:
-    playerManagement() {
+public:
+    playerManagement()
+    {
         count = 0;
     }
 
-    void addPlayer () {
+    void addPlayer()
+    {
         if (count >= Max_player)
         {
-            cout<<"Cannot add more player, max limit reached.";
+            cout << "Cannot add more player, max limit reached.";
         }
         players[count].enterData();
         count++;
-        cout<<"\nPlayer Added Successfully"<<endl;
+        cout << "\nPlayer Added Successfully" << endl;
     }
 
-    void removePlayer () {
+    void removePlayer()
+    {
         int jersey;
-        cout<<"Enter Player Jersey Number: ";
-        cin>>jersey;
-        
+        cout << "Enter Player Jersey Number: ";
+        cin >> jersey;
+
         for (int i = 0; i < count; ++i)
         {
             if (players[i].jerseyNumber == jersey)
@@ -71,69 +79,79 @@ class playerManagement {
                     players[j] = players[j + 1];
                 }
                 count--;
-                cout<<"Player Removed Successfully\n"<<endl;
+                cout << "Player Removed Successfully\n"
+                     << endl;
                 return;
             }
         }
-        cout<<"Player Not Founded, Try Again\n"<<endl;
+        cout << "Player Not Founded, Try Again\n"
+             << endl;
     }
 
-    void searchPlayer() {
+    void searchPlayer()
+    {
         int jersey;
-        cout<<"Enter Player Jersey Number: ";
-        cin>>jersey;
+        cout << "Enter Player Jersey Number: ";
+        cin >> jersey;
 
         for (int i = 0; i < count; ++i)
         {
             if (players[i].jerseyNumber == jersey)
             {
-                cout<<"\nPlayer Found Successfully"<<endl;
+                cout << "\nPlayer Found Successfully" << endl;
                 players[i].getData();
-                cout<<"\n";
+                cout << "\n";
                 return;
             }
         }
-        cout<<"Player Not Founded, Try Again\n"<<endl;
+        cout << "Player Not Founded, Try Again\n"
+             << endl;
     }
 
-    void updatePlayer() {
+    void updatePlayer()
+    {
         int jersey;
-        cout<<"Enter Player Jersey Number: ";
-        cin>>jersey;
+        cout << "Enter Player Jersey Number: ";
+        cin >> jersey;
 
         for (int i = 0; i < count; ++i)
         {
             if (players[i].jerseyNumber == jersey)
             {
-                cout<<"\nPlayed Found Successfully"<<endl;
-                cout<<"Enter Player New Runs: "<<endl;
-                cin>>players[i].runs;
-                cout<<"Enter Player New Wickets: "<<endl;
-                cin>>players[i].wickets;
-                cout<<"Enter Player New Match: "<<endl;
-                cin>>players[i].matchPlayed;
-                cout<<"\nPlayed New Data Updated Successfully"<<endl;
-            } else {
-                cout<<"Player Not Founded, Try Again\n"<<endl;
-            }  
+                cout << "\nPlayed Found Successfully" << endl;
+                cout << "Enter Player New Runs: " << endl;
+                cin >> players[i].runs;
+                cout << "Enter Player New Wickets: " << endl;
+                cin >> players[i].wickets;
+                cout << "Enter Player New Match: " << endl;
+                cin >> players[i].matchPlayed;
+                cout << "\nPlayed New Data Updated Successfully" << endl;
+            }
+            else
+            {
+                cout << "Player Not Founded, Try Again\n"
+                     << endl;
+            }
         }
     }
 
-    void displayAllPlayer() {
+    void displayAllPlayer()
+    {
         if (count == 0)
         {
-            cout<<"No Player, Available"<<endl;
+            cout << "No Player, Available" << endl;
         }
-        cout<<"\nAll Player"<<endl;
+        cout << "\nAll Player" << endl;
         for (int i = 0; i < count; ++i)
         {
             players[i].getData();
-            cout<<"\n\n----------------------"<<endl;
+            cout << "\n\n----------------------" << endl;
         }
     }
 };
 
-int main () {
+int main()
+{
     playerManagement management;
     int choice;
 
@@ -147,8 +165,8 @@ int main () {
         cout << "5. Display All Players\n";
         cout << "6. Display Top 3 Players\n";
         cout << "7. Exit\n";
-        cout<<"Enter your choice: ";
-        cin>>choice;
+        cout << "Enter your choice: ";
+        cin >> choice;
 
         switch (choice)
         {
@@ -163,9 +181,9 @@ int main () {
         case 3:
             management.searchPlayer();
             break;
-        
+
         case 4:
-            management.updatePlayer(); 
+            management.updatePlayer();
             break;
 
         case 5:
@@ -177,14 +195,14 @@ int main () {
             break;
 
         case 7:
-            cout<<"Exiting.....\n";
-            cout<<"Thank you for using Player Management System";
+            cout << "Exiting.....\n";
+            cout << "Thank you for using Player Management System";
             break;
 
         default:
-            cout<<"Invalid Choice, Try Again";
+            cout << "Invalid Choice, Try Again";
         }
     } while (choice != 7);
-    
-return 0;
+
+    return 0;
 }
