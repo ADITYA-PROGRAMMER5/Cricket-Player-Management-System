@@ -118,6 +118,19 @@ class playerManagement {
             }  
         }
     }
+
+    void displayAllPlayer() {
+        if (count == 0)
+        {
+            cout<<"No Player, Available"<<endl;
+        }
+        cout<<"\nAll Player"<<endl;
+        for (int i = 0; i < count; ++i)
+        {
+            players[i].getData();
+            cout<<"\n\n----------------------"<<endl;
+        }
+    }
 };
 
 int main () {
@@ -152,7 +165,7 @@ int main () {
             break;
         
         case 4:
-            
+            management.updatePlayer();
             break;
 
         case 5:
