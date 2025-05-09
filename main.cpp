@@ -158,7 +158,11 @@ public:
         {
             for (int j = 0; j < count; ++j)
             {
-                
+                if (players[j].getScore() > players[i].getScore()) {
+                    Player temp = players[i];
+                    players[i] = players[j];
+                    players[j] = temp;
+                }
             }
         }
     }
