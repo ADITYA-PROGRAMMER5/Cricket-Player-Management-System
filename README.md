@@ -27,3 +27,8 @@ This is a simple console-based Player Management System developed in C++. It all
    ```bash
    ./player_management
    ```
+## 🧠 Scoring Logic
+The top 3 players are ranked based on their score, calculated as:
+   ```bash
+   Score = Runs + (Wickets × 20)
+   ```
