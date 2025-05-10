@@ -38,3 +38,12 @@ Player: A class that holds the player's data and score logic.
 playerManagement: A class to manage all player-related operations.
 
 main(): Provides a menu-driven interface for interacting with the system.
+
+## ✅ Use Case
+This project is ideal for beginners learning:
+
+1. Basic class-based programming in C++
+
+2. How to manage structured data in memory
+
+3. Creating simple command-line applications
