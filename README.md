@@ -32,3 +32,9 @@ The top 3 players are ranked based on their score, calculated as:
    ```bash
    Score = Runs + (Wickets × 20)
    ```
+## 📂 Project Structure
+Player: A class that holds the player's data and score logic.
+
+playerManagement: A class to manage all player-related operations.
+
+main(): Provides a menu-driven interface for interacting with the system.
