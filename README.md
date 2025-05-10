@@ -18,3 +18,4 @@ This is a simple console-based Player Management System developed in C++. It all
 
 ## 🚀 Getting Started
 
+1. Clone this repository or copy the source code into a `.cpp` file.
