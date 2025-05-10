@@ -19,3 +19,7 @@ This is a simple console-based Player Management System developed in C++. It all
 ## 🚀 Getting Started
 
 1. Clone this repository or copy the source code into a `.cpp` file.
+2. Compile using a C++ compiler:
+   ```bash
+   g++ -o player_management player_management.cpp
+  ```
