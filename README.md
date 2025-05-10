@@ -22,4 +22,8 @@ This is a simple console-based Player Management System developed in C++. It all
 2. Compile using a C++ compiler:
    ```bash
    g++ -o player_management player_management.cpp
-  ```
+   ```
+3. Run the executable:
+   ```bash
+   ./player_management
+   ```
