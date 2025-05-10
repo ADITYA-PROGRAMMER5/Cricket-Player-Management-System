@@ -11,3 +11,8 @@ This is a simple console-based Player Management System developed in C++. It all
 - Display all players with complete information.
 - Show top 3 players based on performance score (`Score = Runs + (Wickets × 20)`).
 
+## 🛠️ Technologies Used
+
+- **Language**: C++
+- **Concepts**: Object-Oriented Programming (OOP), Classes, Arrays, Input/Output handling
+
