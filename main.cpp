@@ -90,22 +90,9 @@ public:
 
     void searchPlayer()
     {
-        int jersey;
-        cout << "Enter Player Jersey Number: ";
-        cin >> jersey;
-
-        for (int i = 0; i < count; ++i)
-        {
-            if (players[i].jerseyNumber == jersey)
-            {
-                cout << "\nPlayer Found Successfully" << endl;
-                players[i].getData();
-                cout << "\n";
-                return;
-            }
-        }
-        cout << "Player Not Founded, Try Again\n"
-             << endl;
+        cout<<"Search Player by: "<<endl;
+        cout<<"1. Name"<<endl;
+        cout<<"2. Jersey\n"<<endl;
     }
 
     void updatePlayer()
