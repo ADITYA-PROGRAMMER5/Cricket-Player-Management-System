@@ -90,6 +90,7 @@ public:
 
     void searchPlayer()
     {
+        int choice;
         cout<<"Search Player by: "<<endl;
         cout<<"1. Name"<<endl;
         cout<<"2. Jersey\n"<<endl;
