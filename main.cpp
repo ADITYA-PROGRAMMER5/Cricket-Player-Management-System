@@ -119,8 +119,31 @@ public:
             cout << "Player Not Found, Try Again\n" << endl;
             break;
         }
+
+        case 2:
+        {
+            string name;
+            cout<<"Enter Player Name: ";
+            cin>>name;
+
+            for (int j = 0; j < count; ++j)
+            {
+                if (players[j].Name == name)
+                {
+                    cout << "\nPlayer Found Successfully" << endl;
+                    players[j].getData();
+                    cout << "\n";
+                    return;
+                }
+                
+            }
+            
+            cout << "Player Not Found, Try Again\n" << endl;
+            break;
+        }
         
         default:
+            cout<<"Invalid Choice, Try Again\n";
             break;
         }
     }
