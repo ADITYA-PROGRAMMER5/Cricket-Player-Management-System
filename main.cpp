@@ -92,8 +92,35 @@ public:
     {
         int choice;
         cout<<"Search Player by: "<<endl;
-        cout<<"1. Name"<<endl;
-        cout<<"2. Jersey\n"<<endl;
+        cout<<"1. Jersey"<<endl;
+        cout<<"2. Name \n"<<endl;
+
+        switch (choice)
+        {
+        case 1:
+            {
+            int jersey;
+            cout << "Enter Player Jersey Number: ";
+            cin >> jersey;
+
+            for (int i = 0; i < count; ++i)
+            {
+                if (players[i].jerseyNumber == jersey)
+                {
+                    cout << "\nPlayer Found Successfully" << endl;
+                    players[i].getData();
+                    cout << "\n";
+                    return;
+                }
+            }
+
+            cout << "Player Not Found, Try Again\n" << endl;
+            break;
+        }
+        
+        default:
+            break;
+        }
     }
 
     void updatePlayer()
