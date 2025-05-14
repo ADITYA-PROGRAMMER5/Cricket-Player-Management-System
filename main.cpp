@@ -94,6 +94,8 @@ public:
         cout<<"Search Player by: "<<endl;
         cout<<"1. Jersey"<<endl;
         cout<<"2. Name \n"<<endl;
+        cout<<"Enter your choice (1 or 2): ";
+        cin>>choice;
 
         switch (choice)
         {
