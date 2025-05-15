@@ -91,16 +91,17 @@ public:
     void searchPlayer()
     {
         int choice;
-        cout<<"Search Player by: "<<endl;
-        cout<<"1. Jersey"<<endl;
-        cout<<"2. Name \n"<<endl;
-        cout<<"Enter your choice (1 or 2): ";
-        cin>>choice;
+        cout << "Search Player by: " << endl;
+        cout << "1. Jersey" << endl;
+        cout << "2. Name \n"
+             << endl;
+        cout << "Enter your choice (1 or 2): ";
+        cin >> choice;
 
         switch (choice)
         {
         case 1:
-            {
+        {
             int jersey;
             cout << "Enter Player Jersey Number: ";
             cin >> jersey;
@@ -116,15 +117,16 @@ public:
                 }
             }
 
-            cout << "Player Not Found, Try Again\n" << endl;
+            cout << "Player Not Found, Try Again\n"
+                 << endl;
             break;
         }
 
         case 2:
         {
             string name;
-            cout<<"Enter Player Name: ";
-            cin>>name;
+            cout << "Enter Player Name: ";
+            cin >> name;
 
             for (int j = 0; j < count; ++j)
             {
@@ -135,15 +137,15 @@ public:
                     cout << "\n";
                     return;
                 }
-                
             }
-            
-            cout << "Player Not Found, Try Again\n" << endl;
+
+            cout << "Player Not Found, Try Again\n"
+                 << endl;
             break;
         }
-        
+
         default:
-            cout<<"Invalid Choice, Try Again\n";
+            cout << "Invalid Choice, Try Again\n";
             break;
         }
     }
